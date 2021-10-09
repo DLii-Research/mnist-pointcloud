@@ -42,9 +42,6 @@ def main(argv):
     output_path = argv[2].strip() if len(argv) >= 3 else "./"
     threshold = int(argv[3]) if len(argv) >= 4 else 50
     
-#     print(num_points, output_path, threshold)
-#     return 0
-    
     # Load MNIST using Tensorflow
     (x_train_img, y_train), (x_test_img, y_test) = tf.keras.datasets.mnist.load_data()
   
